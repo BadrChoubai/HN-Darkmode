@@ -1,0 +1,23 @@
+{
+	"manifest_version": 2,
+	"name": "My HackerNews",
+	"version": "1.0",
+	"applications": {
+		"gecko": {
+			"id": "badrchoubai@outlook.com"
+		}
+	},
+	"browser_action": {
+		"default_title": "My HackerNews"
+	},
+	"content_scripts": [
+		{
+			"matches": ["https://news.ycombinator.com/news*"],
+			"js": ["myHn.js"]
+		}
+	],
+	"icons": {
+		"48": "y18.png"
+	}
+}
+
