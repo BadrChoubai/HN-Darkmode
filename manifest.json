@@ -1,23 +1,26 @@
 {
-	"manifest_version": 2,
-	"name": "My HackerNews",
-	"version": "1.0",
+	"author": "Badr Choubai",
 	"applications": {
 		"gecko": {
-			"id": "badrchoubai@outlook.com"
+			"id": "badrchoubai@outlook.com",
+			"strict_min_version": "74.0"
 		}
 	},
 	"browser_action": {
-		"default_title": "My HackerNews"
+		"default_title": "HN Dark Mode"
 	},
 	"content_scripts": [
 		{
 			"matches": ["https://news.ycombinator.com/*"],
-			"js": ["myHn.js"]
+			"js": ["hnDarkMode.js"]
 		}
 	],
+	"description": "Add Dark Mode to hackernews",
 	"icons": {
 		"48": "y18.png"
-	}
+	},
+	"manifest_version": 2,
+	"name": "HN Dark Mode",
+	"version": "1.1"
 }
 
